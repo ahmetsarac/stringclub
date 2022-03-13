@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'views/login_view.dart';
 
 void main() => runApp(const StringClub());
 
@@ -9,11 +10,7 @@ class StringClub extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       title: 'StringClub',
-      home: Scaffold(
-        body: Center(
-          child: Text('StringClub'),
-        ),
-      ),
+      home: LoginView(),
     );
   }
 }
