@@ -96,28 +96,45 @@ class LoginView extends StatelessWidget {
                     onPressed: () {},
                   ),
                   Container(
+                    alignment: Alignment.centerRight,
                     margin: const EdgeInsets.only(top: 16.0),
                     width: double.infinity,
+                    child: TextButton(
+                      style: TextButton.styleFrom(
+                        minimumSize: Size.zero,
+                        padding: EdgeInsets.zero,
+                        tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                      ),
+                      child: const Text(
+                        'Forgot your password?',
+                        textAlign: TextAlign.end,
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontFamily: 'Poppins',
+                          fontWeight: FontWeight.w300,
+                        ),
+                      ),
+                      onPressed: () {},
+                    ),
+                  ),
+                  const SizedBox(
+                    height: 100.0,
+                  ),
+                  TextButton(
+                    style: TextButton.styleFrom(
+                      minimumSize: Size.zero,
+                      padding: EdgeInsets.zero,
+                      tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                    ),
                     child: const Text(
-                      'Forgot your password?',
-                      textAlign: TextAlign.right,
+                      'It\'s not you? Log in with different e-mail',
                       style: TextStyle(
                         color: Colors.white,
                         fontFamily: 'Poppins',
                         fontWeight: FontWeight.w300,
                       ),
                     ),
-                  ),
-                  const SizedBox(
-                    height: 100.0,
-                  ),
-                  const Text(
-                    'It\'s not you? Log in with different e-mail',
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontFamily: 'Poppins',
-                      fontWeight: FontWeight.w300,
-                    ),
+                    onPressed: () {},
                   ),
                 ],
               ),
