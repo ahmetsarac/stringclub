@@ -42,6 +42,11 @@ class StringClub extends StatelessWidget {
             fontSize: 14,
             color: Color(0xFF131A22),
           ),
+          labelLarge: TextStyle(
+            fontFamily: 'SF Pro Display',
+            fontSize: 16,
+            color: Color(0xFF131A22),
+          ),
         ),
       ),
       home: const HomeView(),

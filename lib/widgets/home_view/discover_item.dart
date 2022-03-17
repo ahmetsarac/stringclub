@@ -15,6 +15,7 @@ class DiscoverItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      width: MediaQuery.of(context).size.width * (isSelected ? 0.55 : 0.4),
       margin: const EdgeInsets.only(
           top: 10.0, bottom: 22.0, right: 10.0, left: 10.0),
       padding: const EdgeInsets.all(20.0),
@@ -30,14 +31,14 @@ class DiscoverItem extends StatelessWidget {
           ),
         ],
       ),
-      width: MediaQuery.of(context).size.width * (isSelected ? 0.55 : 0.4),
-      height: 100,
       child: Column(
+        mainAxisSize: MainAxisSize.min,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
             title,
             style: Theme.of(context).textTheme.headlineMedium!.copyWith(
+                fontWeight: isSelected ? FontWeight.w600 : FontWeight.w500,
                 color: isSelected == false
                     ? Colors.white
                     : Theme.of(context).textTheme.headlineMedium!.color),
