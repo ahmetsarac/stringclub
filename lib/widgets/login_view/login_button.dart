@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../common/app_theme.dart';
+
 class LoginButton extends StatelessWidget {
   const LoginButton({
     Key? key,
@@ -9,7 +11,7 @@ class LoginButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return ElevatedButton(
       style: ElevatedButton.styleFrom(
-        primary: const Color(0xFF4076E5),
+        primary: AppTheme.colors['blue'],
         minimumSize: const Size.fromHeight(48.0),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(50.0),

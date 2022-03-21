@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../widgets/common/app_theme.dart';
 import '../widgets/common/search_input.dart';
 import '../widgets/common/top_text.dart';
 import '../widgets/common/views_app_bar.dart';
@@ -19,7 +20,7 @@ class _InstrumentViewState extends State<InstrumentView> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: const ViewsAppBar(),
-      backgroundColor: const Color(0xFFF7F8FA),
+      backgroundColor: AppTheme.colors['backgroundColor'],
       body: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -67,7 +68,6 @@ class _InstrumentViewState extends State<InstrumentView> {
               padding: const EdgeInsets.symmetric(horizontal: 16.0),
               child: Column(
                 children: const [
-                  // Course Item
                   CourseItem('Old Dan Tucker', 1),
                   CourseItem('Waltzing Matilda', 0.5),
                   CourseItem('Luly Gavotte', 0.7),

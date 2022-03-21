@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../common/app_theme.dart';
+
 class SongItem extends StatelessWidget {
   final String imageUrl;
   final String category;
@@ -46,7 +48,7 @@ class SongItem extends StatelessWidget {
                         fontWeight: FontWeight.w700,
                         letterSpacing: 0.4,
                         fontSize: 12,
-                        color: const Color(0xFF4076E5),
+                        color: AppTheme.colors['blue'],
                       ),
                 ),
               ),

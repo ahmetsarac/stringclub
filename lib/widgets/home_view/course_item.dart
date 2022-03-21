@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../common/app_theme.dart';
+
 class CourseItem extends StatelessWidget {
   final String name;
   final double progress;
@@ -43,7 +45,9 @@ class CourseItem extends StatelessWidget {
                         Icon(
                           Icons.star,
                           size: 12,
-                          color: i == 4 ? Colors.grey : const Color(0xFF40E5BF),
+                          color: i == 4
+                              ? AppTheme.colors['grey']
+                              : AppTheme.colors['green'],
                         ),
                       const SizedBox(
                         width: 10,
@@ -51,7 +55,7 @@ class CourseItem extends StatelessWidget {
                       Text(
                         '4 (152)',
                         style: Theme.of(context).textTheme.bodySmall!.copyWith(
-                              color: const Color(0xFF8F9BB3),
+                              color: AppTheme.colors['grey'],
                             ),
                       ),
                     ],
@@ -69,12 +73,12 @@ class CourseItem extends StatelessWidget {
                   radius: 20,
                   child: Icon(Icons.play_arrow),
                 ),
-                const SizedBox(
+                SizedBox(
                   width: 40,
                   height: 40,
                   child: CircularProgressIndicator(
                     strokeWidth: 2,
-                    color: Color(0xFFE0D9FF),
+                    color: AppTheme.colors['purple'],
                     value: 1,
                   ),
                 ),
@@ -83,7 +87,7 @@ class CourseItem extends StatelessWidget {
                   height: 40,
                   child: CircularProgressIndicator(
                     strokeWidth: 2,
-                    color: const Color(0xFF4076E5),
+                    color: AppTheme.colors['blue'],
                     value: progress, // Change this value to update the progress
                   ),
                 ),

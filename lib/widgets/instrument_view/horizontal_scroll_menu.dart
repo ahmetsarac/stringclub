@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../common/app_theme.dart';
+
 class HorizontalScrollMenu extends StatefulWidget {
   const HorizontalScrollMenu({Key? key}) : super(key: key);
 
@@ -47,8 +49,8 @@ class _HorizontalScrollMenuState extends State<HorizontalScrollMenu> {
                     style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                           fontSize: 16,
                           color: _selectedIndex == index
-                              ? const Color(0xFF131A22)
-                              : const Color(0xFF8F9BB3),
+                              ? AppTheme.colors['dark']
+                              : AppTheme.colors['grey'],
                         ),
                   ),
                   onPressed: () {
@@ -62,7 +64,7 @@ class _HorizontalScrollMenuState extends State<HorizontalScrollMenu> {
                     width: 30,
                     height: 5,
                     decoration: BoxDecoration(
-                      color: const Color(0xFF40E5BF),
+                      color: AppTheme.colors['green'],
                       borderRadius: BorderRadius.circular(16.0),
                     ),
                   ),

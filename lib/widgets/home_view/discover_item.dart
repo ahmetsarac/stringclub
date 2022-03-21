@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../common/app_theme.dart';
+
 class DiscoverItem extends StatelessWidget {
   final bool isSelected;
   final String title;
@@ -20,7 +22,7 @@ class DiscoverItem extends StatelessWidget {
           top: 10.0, bottom: 22.0, right: 10.0, left: 10.0),
       padding: const EdgeInsets.all(20.0),
       decoration: BoxDecoration(
-        color: isSelected ? Colors.white : const Color(0xFF4076E5),
+        color: isSelected ? Colors.white : AppTheme.colors['blue'],
         borderRadius: BorderRadius.circular(20.0),
         boxShadow: [
           BoxShadow(
@@ -52,8 +54,8 @@ class DiscoverItem extends StatelessWidget {
             child: const Icon(Icons.play_arrow, color: Colors.white),
             decoration: BoxDecoration(
               color: isSelected
-                  ? const Color(0xFF4076E5)
-                  : const Color(0xFF40E5BF),
+                  ? AppTheme.colors['blue']
+                  : AppTheme.colors['grey'],
               borderRadius: BorderRadius.circular(10.0),
             ),
           ),
@@ -81,22 +83,22 @@ class DiscoverItem extends StatelessWidget {
                 BorderSide(
                   width: isSelected ? 1.0 : 0.85,
                   color: isSelected
-                      ? const Color(0xFF4076E5)
-                      : const Color(0xFF9EBAF4),
+                      ? AppTheme.colors['blue'] as Color
+                      : AppTheme.colors['lightBlue'] as Color,
                   style: BorderStyle.solid,
                 ),
               ),
             ),
             icon: Icon(
               Icons.query_builder,
-              color: isSelected ? const Color(0xFF4076E5) : Colors.white,
+              color: isSelected ? AppTheme.colors['blue'] : Colors.white,
               size: 20,
             ),
             onPressed: () {},
             label: Text(
               '3 hours, 20 min',
               style: Theme.of(context).textTheme.labelSmall!.copyWith(
-                    color: isSelected ? const Color(0xFF4076E5) : Colors.white,
+                    color: isSelected ? AppTheme.colors['blue'] : Colors.white,
                   ),
             ),
           ),

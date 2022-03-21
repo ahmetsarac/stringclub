@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'app_theme.dart';
+
 class SearchInput extends StatelessWidget {
   const SearchInput({Key? key}) : super(key: key);
 
@@ -33,7 +35,7 @@ class SearchInput extends StatelessWidget {
                   child: Container(
                     padding: const EdgeInsets.all(8.0),
                     decoration: BoxDecoration(
-                        color: const Color(0xFF40E5BF),
+                        color: AppTheme.colors['green'],
                         borderRadius: BorderRadius.circular(30.0)),
                     child: InkWell(
                       onTap: () {},
@@ -49,7 +51,7 @@ class SearchInput extends StatelessWidget {
                 fillColor: Colors.white,
                 hintText: 'Search Song',
                 hintStyle: Theme.of(context).textTheme.bodySmall!.copyWith(
-                      color: const Color(0xFF8F9BB3),
+                      color: AppTheme.colors['grey'],
                     ),
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(100.0),

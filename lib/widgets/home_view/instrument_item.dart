@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../common/app_theme.dart';
+
 class InstrumentItem extends StatelessWidget {
   final String instrumentName;
   final String imageUrl;
@@ -21,7 +23,7 @@ class InstrumentItem extends StatelessWidget {
             padding: const EdgeInsets.all(16.0),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(13.0),
-              color: const Color(0xFF8F9BB3),
+              color: AppTheme.colors['grey'],
             ),
             child: Image.asset(imageUrl),
           ),
@@ -52,7 +54,7 @@ class IntsrumentItemOther extends StatelessWidget {
                 const EdgeInsets.symmetric(vertical: 36.0, horizontal: 20.0),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(13.0),
-              border: Border.all(color: const Color(0xFF8F9BB3)),
+              border: Border.all(color: AppTheme.colors['grey'] as Color),
             ),
             child: Image.asset('assets/images/other.png'),
           ),

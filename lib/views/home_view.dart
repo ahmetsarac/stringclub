@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../widgets/common/app_theme.dart';
 import '../widgets/common/top_text.dart';
 import '../widgets/common/views_app_bar.dart';
 import '../widgets/home_view/course_item.dart';
@@ -13,7 +14,7 @@ class HomeView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: const ViewsAppBar(),
-      backgroundColor: const Color(0xFFF7F8FA),
+      backgroundColor: AppTheme.colors['backgroundColor'],
       body: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
