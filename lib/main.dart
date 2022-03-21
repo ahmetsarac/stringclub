@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'views/instrument_view.dart';
 import 'views/login_view.dart';
 import 'views/home_view.dart';
 
@@ -49,7 +50,7 @@ class StringClub extends StatelessWidget {
           ),
         ),
       ),
-      home: const HomeView(),
+      home: const InstrumentView(),
     );
   }
 }

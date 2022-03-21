@@ -83,7 +83,7 @@ class CourseItem extends StatelessWidget {
                   height: 40,
                   child: CircularProgressIndicator(
                     strokeWidth: 2,
-                    color: Color(0xFF4076E5),
+                    color: const Color(0xFF4076E5),
                     value: progress, // Change this value to update the progress
                   ),
                 ),
