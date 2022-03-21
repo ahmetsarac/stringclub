@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:stringclub/views/song_view.dart';
+import '/views/song_view.dart';
 import 'views/instrument_view.dart';
 import 'views/login_view.dart';
 import 'views/home_view.dart';
@@ -15,7 +15,7 @@ class StringClub extends StatelessWidget {
     return MaterialApp(
       title: 'StringClub',
       theme: AppTheme.appTheme,
-      home: const SongView(),
+      home: const HomeView(),
     );
   }
 }

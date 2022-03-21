@@ -55,7 +55,7 @@ class DiscoverItem extends StatelessWidget {
             decoration: BoxDecoration(
               color: isSelected
                   ? AppTheme.colors['blue']
-                  : AppTheme.colors['grey'],
+                  : AppTheme.colors['green'],
               borderRadius: BorderRadius.circular(10.0),
             ),
           ),

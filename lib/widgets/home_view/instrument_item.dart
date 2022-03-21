@@ -29,7 +29,10 @@ class InstrumentItem extends StatelessWidget {
           ),
           Text(
             instrumentName,
-            style: Theme.of(context).textTheme.labelSmall,
+            style: Theme.of(context)
+                .textTheme
+                .labelSmall!
+                .copyWith(letterSpacing: 0.4),
           ),
         ],
       ),
